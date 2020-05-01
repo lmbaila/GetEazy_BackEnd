@@ -6,5 +6,6 @@ const { celebrate, Joi } = require('celebrate');
 router.get('/users', auth.index);
 router.post('/register', celebrate(validadeUser.create, {abortEarly:false, allowUnknown: true}), auth.create);
 router.post('/login', celebrate(validadeUser.login, {abortEarly:false}), auth.autheticate);
+router.post('/forgot', auth.forgotPassword);
 
 module.exports = app => app.use('/auth', router);
