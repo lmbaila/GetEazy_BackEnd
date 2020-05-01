@@ -2,12 +2,18 @@
 module.exports = {
 
   development: {
-    client: 'sqlite3',
+    client: 'pg',
     connection: {
-      filename: './src/database/geteasy_db.sqlite'
+      database: 'geteasy',
+      user: 'postgres',
+      password: '12345',
+
     },
     migrations: {
       directory: './src/database/migrations'
+    },
+    seeds: {
+      directory: './src/database/seeds'
     },
     useNullAsDefault: true,
   },
