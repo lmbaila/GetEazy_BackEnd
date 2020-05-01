@@ -7,9 +7,10 @@ exports.up = function(knex) {
     table.enu('gender', ['Male', 'Female']);
     table.string('phone_number', 14).unique().notNullable();
     table.string('email', 100).unique();
-    table.timestamps(true);
     table.string('id').notNullable();
     table.foreign('id').references('id').inTable('users');
+    table.datetime('created_at').defaultTo(knex.fn.now());
+    table.datetime('updated_at').defaultTo(knex.fn.now());
   });
 };
 
