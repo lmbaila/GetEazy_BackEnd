@@ -84,10 +84,11 @@ module.exports = {
       
       const password_reset_token = crypto.randomBytes(20).toString('hex'); 
       const password_reset_expires = new Date();
+      const updated_at = new Date();
       password_reset_expires.setHours(password_reset_expires.getHours() + 1);
       const setToken = await knex('users')
               .where({id: user.id})
-              .update({ password_reset_token, password_reset_expires });
+              .update({ password_reset_token, password_reset_expires, updated_at });
       if(setToken === 0){
         return res.status(400).send({error: 'can not send forgot password mail'});
       }
