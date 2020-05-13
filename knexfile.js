@@ -5,8 +5,8 @@ module.exports = {
     client: 'pg',
     connection: {
       database: 'geteasy',
-      user: 'postgres',
-      password: '12345',
+      user: 'padmin',
+      password: 'M@lan7@',
 
     },
     migrations: {

@@ -7,5 +7,6 @@ app.use(bodyParser.urlencoded({ extended: false}));
 
 require('./routes/auth.router')(app);
 require('./routes/product.router')(app);
+require('./routes/store.router')(app);
 app.use(errors());
-app.listen(3333);
+app.listen(3335);

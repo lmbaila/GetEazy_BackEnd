@@ -6,16 +6,16 @@ exports.seed = function(knex) {
       // Inserts seed entries
       return knex('province').insert([
        {province_code: 'MZ-MPM', province_name: 'Maputo Cidade'},
-       {province_code: 'MZ-P', province_name: 'Cabo Delgado'},
-       {province_code: 'MZ-G', province_name: 'Gaza'},
-       {province_code: 'MZ-I', province_name: 'Inhambane'},
-       {province_code: 'MZ-B', province_name: 'Manica'},
-       {province_code: 'MZ-L', province_name: 'Maputo Provincia'},
-       {province_code: 'MZ-N', province_name: 'Nampula'},
-       {province_code: 'MZ-A', province_name: 'Niassa'},
-       {province_code: 'MZ-S', province_name: 'Sofala'},
-       {province_code: 'MZ-T', province_name: 'Tete'},
-       {province_code: 'MZ-Q', province_name: 'Zambézia'},
+       {province_code: 'MZ-PMB', province_name: 'Cabo Delgado'},
+       {province_code: 'MZ-XAI', province_name: 'Gaza'},
+       {province_code: 'MZ-INH', province_name: 'Inhambane'},
+       {province_code: 'MZ-CHM', province_name: 'Manica'},
+       {province_code: 'MZ-MTL', province_name: 'Maputo Provincia'},
+       {province_code: 'MZ-NPL', province_name: 'Nampula'},
+       {province_code: 'MZ-LCG', province_name: 'Niassa'},
+       {province_code: 'MZ-BRA', province_name: 'Sofala'},
+       {province_code: 'MZ-TET', province_name: 'Tete'},
+       {province_code: 'MZ-QLM', province_name: 'Zambézia'},
       ]);
     });
 };
