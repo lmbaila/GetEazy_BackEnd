@@ -1,0 +1,29 @@
+Este ficheiro com toda estrutura dos endpoints:
+
+Link da API:
+    ->http://localhost:3335
+Para o link o localhost sera substituido pelo link hospedado
+O 3335 sera a porta escolhida
+
+Metodos utilizados:
+    ->GET: para listagem
+    ->POST: para registo
+    ->PUT: para actualizacao
+    ->DELETE: para eliminacao
+
+Routas
+    ->AUTH: autenticacao e registo de novos utilizadores
+    ->STORE: lojas
+    ->PRODUCT: produtos
+
+Funcoes para Routas
+    ->/: lista tudos registos
+    ->/register: regista novo dado
+    ->/edit/:id : actualizada dado especifico
+    ->/delete/:id : elimina dado especifico
+
+Estrutura de chamada
+    ->LINK/ROUTA/FUNCAo
+    Ex: http://localhost:3335/product/register
+
+Os dados utilizados para preenchimento tem o mesmo nome com os dados da base de dados

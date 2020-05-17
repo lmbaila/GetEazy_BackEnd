@@ -6,11 +6,11 @@ exports.seed = function(knex) {
       // Inserts seed entries
       return knex('person').insert([
         {
-          first_name: 'Lazaro',
-          last_name: 'Mbaila',
+          first_name: 'Suale Abdul',
+          last_name: 'Suale',
           gender: 'Male',
-          phone_number: '824162984',
-          email: 'lazarozito@gmail.com',
+          phone_number: '845725858',
+          email: 'sualeabdul@plusteckgroup.com',
           id: '8e849djdk4'
         },
 

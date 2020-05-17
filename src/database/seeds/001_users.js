@@ -8,7 +8,7 @@ exports.seed = async function(knex) {
       return knex('users').insert([
         {
           id:'8e849djdk4',
-          username: 'lmbaila',                     
+          username: 'ssuale',                     
           login_with: 'register',             
           user_type: 'admin',             
           access: 'accepted',               
